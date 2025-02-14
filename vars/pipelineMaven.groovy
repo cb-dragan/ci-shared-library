@@ -13,7 +13,7 @@ def call(Map configDefaults) {
             stage('Init') {
                 agent {
                     kubernetes {
-                        yaml libraryResource("podtemplates/podTemplate-init.yaml")
+                        yaml libraryResource("podtemplates/podTemplate-simple.yaml")
                     }
                 }
                 steps {

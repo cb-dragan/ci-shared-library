@@ -27,7 +27,8 @@ spec:
   volumes:
     - name: maven-cache
       persistentVolumeClaim:
-        claimName: maven-repo
+        claimName: m2-cache
+        #claimName: maven-repo
 #    - name: jenkins-docker-cfg
 #      projected:
 #        sources:
